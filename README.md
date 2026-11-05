@@ -6,7 +6,7 @@
 
 **Skill Scout recommends AI skills based on what you want to do.** Describe your task in plain language: it clarifies the essentials, checks your installed skills and tools, and searches for additional candidates when needed. You get numbered recommendations with reasons and sources.
 
-Choose the skills you want, review how they fit into your workflow, then approve execution.
+When skill selection is needed, choose the skills you want, review the workflow, then approve execution. If the requirements are clear and available capabilities already cover the task, Scout completes it directly. Existing selections, plans, and authorization are reused.
 
 **One complex task can use several skills at each step.** Simple tasks stay simple.
 
@@ -53,8 +53,10 @@ flowchart LR
 ## Three exceptions that keep it practical
 
 1. **Simple, clear task:** do it directly, without a forced selection ritual.
-2. **Complex task:** follow the full workflow; ask only useful questions and normally offer two or three relevant options per capability area. One valid option is enough.
+2. **Task with meaningful skill tradeoffs:** use the necessary selection stages; ask only useful questions and normally offer two or three relevant options per capability area. One valid option is enough. Multiple outputs or steps alone do not require the full workflow.
 3. **“You choose, go ahead”:** skip selection and workflow confirmation within the user's authorization. This does not grant unrelated permissions.
+
+Clear requirements and known capabilities take the direct path, even for several related text outputs. Missing essential input calls for clarification; reversible style choices can use stated assumptions. An explicit request to see options or a plan still takes precedence. After a workflow, its impacts, and acceptance checks have been shown, “choose 1 and execute this plan” can combine selection and execution confirmation. Choosing a number alone does not authorize execution or installation.
 
 ## Install in Codex
 
@@ -113,7 +115,7 @@ Useful contributions include reproducible examples, better discovery paths, Engl
 
 ## Validation status
 
-The source skill passed the bundled skill format validator and local reference checks during preparation. The example is a simulated conversation, not an end-to-end benchmark. External skill discovery, third-party installations, and cross-host behavior have not been validated as part of this release preparation.
+The updated skill passed the bundled format validator and local reference checks. In a small text-only comparison, two independent evaluation agents each answered the same eight scenarios, one using the previous version and one using the updated version. Routing matched the review criteria in 6/8 previous-version cases and 8/8 updated-version cases. The observed improvement was direct delivery on two fully specified, multi-part text tasks. Each version had one batch of eight scenarios, without repeated trials or a fresh session per scenario; these counts are not overall success rates. External skill discovery, third-party installations, cross-host behavior, and complete multi-turn production workflows were not tested. The walkthrough remains a simulated conversation.
 
 ## License
 
