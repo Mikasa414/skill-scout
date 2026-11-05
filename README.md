@@ -1,10 +1,12 @@
 # Skill Scout
 
-### Turn a rough task into a skill-powered workflow you can review.
+### Describe your task. Get relevant AI skill recommendations automatically.
 
 [中文说明](README.zh-CN.md) · [Example conversation](examples/interview-to-report.md) · [Make it yours](CUSTOMIZING.md) · [Contribute](CONTRIBUTING.md)
 
-Describe the outcome. Answer a few useful questions. Choose numbered skills. Review how they fit together. Then approve execution.
+**Skill Scout recommends AI skills based on what you want to do.** Describe your task in plain language: it clarifies the essentials, checks your installed skills and tools, and searches for additional candidates when needed. You get numbered recommendations with reasons and sources.
+
+Choose the skills you want, review how they fit into your workflow, then approve execution.
 
 **One complex task can use several skills at each step.** Simple tasks stay simple.
 
@@ -40,6 +42,7 @@ flowchart LR
 
 | What you need | What Scout does |
 |---|---|
+| Skills matched to your task | Automatically identifies relevant capability areas and recommends candidates |
 | A clearer task | Asks up to three questions that affect the recommendation |
 | Skills you can choose | Numbers candidates and explains the fit, source, and installation status |
 | Fewer duplicate installations | Checks available skills, plugin skills, and tools first |
